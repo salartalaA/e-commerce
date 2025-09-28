@@ -5,8 +5,8 @@
   "main": "backend/server.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm start --prefix backend"
+    "build": "npm install backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start backend"
   },
   "keywords": [],
   "author": "",
