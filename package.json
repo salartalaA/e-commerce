@@ -2,29 +2,20 @@
   "name": "e-commerce-store",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/server.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "build": "npm install backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/server.js"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salartalaA/e-commerce.git"
   },
   "keywords": [],
   "author": "",
-  "type": "module",
   "license": "ISC",
-  "dependencies": {
-    "@upstash/redis": "^1.35.4",
-    "bcryptjs": "^3.0.2",
-    "cloudinary": "^2.7.0",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.18.1",
-    "stripe": "^18.5.0"
+  "bugs": {
+    "url": "https://github.com/salartalaA/e-commerce/issues"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+  "homepage": "https://github.com/salartalaA/e-commerce#readme"
 }

@@ -33,12 +33,12 @@ app.use("/api/coupons", couponRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/analytics", analyticsRoutes);
 
+// make ready for deployment
 if (process.env.NODE_ENV === "production") {
-  const frontendPath = path.join(__dirname, "../frontend/dist");
-  app.use(express.static(frontendPath));
+  app.use(express.static(path.join(__dirname, "../../frontend/dist")));
 
-  app.get("/:path(*)", (_, res) => {
-    res.sendFile(path.join(frontendPath, "index.html"));
+  app.get("*", (_, res) => {
+    res.sendFile(path.join(__dirname, "../../frontend/dist/index.html"));
   });
 }
 
