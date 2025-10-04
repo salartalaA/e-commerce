@@ -15,7 +15,7 @@ Includes an **admin dashboard** with sales analytics powered by **Recharts**.
 ## ⚡ Installation
 
 ```bash
-git clone https://github.com/salartalaa/ecommerce-app.git
+git clone https://github.com/salartalaa/e-commerce.git
 cd frontend
 npm install
 cd backend
